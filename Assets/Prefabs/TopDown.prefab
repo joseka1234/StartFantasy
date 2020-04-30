@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 66968020384292687}
   - component: {fileID: 66968020384292672}
   - component: {fileID: 66968020384292673}
-  - component: {fileID: 66968020384292674}
   m_Layer: 0
   m_Name: TopDown
   m_TagString: Untagged
@@ -126,7 +125,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Velocidad: 5
   FuerzaDash: 30
-  Animations: []
 --- !u!50 &66968020384292673
 Rigidbody2D:
   serializedVersion: 4
@@ -148,22 +146,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!95 &66968020384292674
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 66968020384292684}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: feee3031f49606b48b535e3e1999928e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

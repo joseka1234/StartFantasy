@@ -14,7 +14,7 @@ public class TopDownPlayerController : MonoBehaviour
     private const float MIN_DELTA = 0.2f;
     private bool Dashing;
     private Vector2 Movimiento;
-    private Animation animation;
+    private Animator animator;
 
     private Rigidbody2D rigidbody2D;
     private PlayerState estado;
@@ -23,7 +23,7 @@ public class TopDownPlayerController : MonoBehaviour
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
-        animation = GetComponent<Animation>();
+        animator = GetComponent<Animator>();
         Dashing = false;
     }
 
@@ -35,15 +35,14 @@ public class TopDownPlayerController : MonoBehaviour
         switch(estado)
         {
             case PlayerState.IDLE:
-                animation.Play("IDLE");
+                animator.SetTrigger("IDLE");
                 break;
 
             case PlayerState.CaminarDown:
             case PlayerState.CaminarUp:
             case PlayerState.CaminarRight:
             case PlayerState.CaminarLeft:
-
-                animation.Play(estado.ToString());
+                animator.SetTrigger(estado.ToString());
                 rigidbody2D.velocity = Movimiento * Velocidad;
                 break;
 
