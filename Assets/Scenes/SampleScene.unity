@@ -241,6 +241,10 @@ PrefabInstance:
       propertyPath: Animations.Array.size
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 66968020384292672, guid: 609a5019f3926474fbf3a8d25d42f84a, type: 3}
+      propertyPath: FuerzaDash
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 66968020384292673, guid: 609a5019f3926474fbf3a8d25d42f84a, type: 3}
       propertyPath: m_LinearDrag
       value: 20
